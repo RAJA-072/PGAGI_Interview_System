@@ -1,0 +1,19 @@
+Supervised learning is a machine learning paradigm where a model is trained on labeled data, meaning each training example is paired with an output label. The goal is to learn a mapping function from inputs to outputs that generalizes well to unseen data. Common supervised learning tasks include classification, where the output is a discrete category, and regression, where the output is a continuous value.
+
+Overfitting occurs when a model learns the training data too well, including its noise and outliers, resulting in poor generalization to new data. A classic sign of overfitting is a large gap between training accuracy and validation accuracy. Techniques to reduce overfitting include regularization, dropout, early stopping, and gathering more training data.
+
+The bias-variance tradeoff describes the tension between two sources of error in a model. High bias means the model is too simple and underfits the data, missing relevant relationships. High variance means the model is too sensitive to fluctuations in the training data and overfits. The goal of model selection is to find a sweet spot that minimizes total error.
+
+Cross-validation is a resampling technique used to evaluate machine learning models on a limited data sample. K-fold cross-validation splits the data into k subsets, trains on k-1 of them, and validates on the remaining subset, rotating through all k combinations. This gives a more reliable estimate of model performance than a single train-test split.
+
+Evaluation metrics differ by task. For classification, common metrics include accuracy, precision, recall, and F1 score. Accuracy alone can be misleading on imbalanced datasets, which is why precision and recall are often reported together via the F1 score. For regression, common metrics include mean squared error, mean absolute error, and R-squared.
+
+A neural network is composed of layers of interconnected nodes, or neurons, each applying a weighted sum followed by a non-linear activation function. Deep learning refers to neural networks with many hidden layers, which allows them to learn hierarchical representations of data. Backpropagation is the algorithm used to compute gradients of the loss function with respect to each weight, enabling gradient descent to update the network.
+
+Gradient descent is an optimization algorithm used to minimize a loss function by iteratively moving in the direction of steepest descent, as defined by the negative of the gradient. Variants include stochastic gradient descent, which updates weights using a single training example at a time, and mini-batch gradient descent, which strikes a balance between full-batch and stochastic updates.
+
+Feature engineering is the process of using domain knowledge to create input features that make machine learning algorithms work better. Good features can often improve model performance more than switching to a more complex algorithm. Techniques include normalization, encoding categorical variables, and creating interaction terms between existing features.
+
+Decision trees split data recursively based on feature values to create a tree-like model of decisions. Random forests combine many decision trees trained on random subsets of data and features, then average their predictions, which reduces variance and improves generalization compared to a single tree. Gradient boosting builds trees sequentially, where each new tree corrects the errors of the previous ones.
+
+Unsupervised learning works with unlabeled data to discover hidden patterns or structures. Clustering algorithms like k-means group similar data points together based on distance metrics. Dimensionality reduction techniques like principal component analysis (PCA) project high-dimensional data into a lower-dimensional space while preserving as much variance as possible.

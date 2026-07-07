@@ -1,0 +1,19 @@
+Exploratory data analysis (EDA) is the process of summarizing and visualizing a dataset's main characteristics before modeling. Common EDA steps include checking for missing values, examining distributions of individual features, and computing correlations between variables. Good EDA often reveals data quality issues that would otherwise silently degrade model performance.
+
+Data cleaning handles issues like missing values, duplicate records, and inconsistent formatting. Missing values can be handled by dropping rows, imputing with the mean/median/mode, or using model-based imputation. The right choice depends on how much data is missing and whether it is missing completely at random, at random, or not at random.
+
+Feature scaling transforms numeric features to a common scale without distorting differences in ranges. Standardization rescales features to have zero mean and unit variance, while min-max normalization rescales features to a fixed range, typically 0 to 1. Scaling matters especially for distance-based algorithms like k-nearest neighbors and gradient-based algorithms like linear regression with regularization.
+
+A/B testing is a statistical method used to compare two versions of a product or feature to determine which performs better on a chosen metric. It relies on randomly assigning users to a control group and a treatment group, then using hypothesis testing to determine whether observed differences are statistically significant or due to chance.
+
+Correlation does not imply causation. Two variables can be strongly correlated without one causing the other, due to a confounding variable or coincidence. Establishing causation typically requires controlled experiments or careful causal inference techniques such as instrumental variables or propensity score matching.
+
+Pandas is a popular Python library for data manipulation, providing DataFrame and Series objects for handling tabular and time-series data. Common operations include filtering rows, grouping data with groupby, merging multiple datasets, and handling missing values with fillna or dropna.
+
+Model interpretability refers to how easily a human can understand why a model made a particular prediction. Simple models like linear regression and decision trees are inherently interpretable, while complex models like deep neural networks or ensembles often require post-hoc explanation techniques such as SHAP values or LIME.
+
+Time series data has an inherent temporal ordering, which distinguishes it from ordinary tabular data. Key concepts include trend, seasonality, and stationarity. Common models include ARIMA for classical statistical forecasting and more recently, sequence models like LSTMs for capturing complex temporal patterns.
+
+Data pipelines automate the flow of data from raw sources through cleaning, transformation, and loading into a form usable for analysis or modeling. Well-designed pipelines are reproducible, handle errors gracefully, and are often orchestrated using tools like Airflow or Prefect in production settings.
+
+Statistical significance and practical significance are different concepts. A result can be statistically significant, meaning unlikely to occur by chance, while still being practically negligible in real-world impact. Reporting effect sizes alongside p-values helps stakeholders judge both the certainty and the magnitude of a finding.
