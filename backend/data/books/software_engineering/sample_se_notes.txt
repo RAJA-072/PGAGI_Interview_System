@@ -1,0 +1,25 @@
+Software engineering interview reference notes
+
+Core concepts:
+- SOLID principles and practical class design
+- Object-oriented design trade-offs and composition vs inheritance
+- Clean architecture layers and dependency direction
+- Test pyramid: unit, integration, end-to-end tests
+- CI/CD basics and release strategies (blue/green, canary)
+- API design principles: idempotency, versioning, pagination, error handling
+- Concurrency basics: threads, async IO, race conditions, locking
+- Caching strategies and invalidation pitfalls
+- Database fundamentals: indexing, transactions, isolation levels
+- System design topics: scalability, availability, consistency, observability
+
+Coding and problem-solving:
+- Time and space complexity analysis
+- Data structures: arrays, hash maps, stacks, queues, trees, graphs
+- Common patterns: two pointers, sliding window, BFS/DFS, dynamic programming
+- Writing maintainable code with clear naming and decomposition
+
+Behavioral and collaboration:
+- Communicating trade-offs clearly
+- Incident handling and postmortems
+- Mentoring, code reviews, and ownership
+- Delivering features incrementally with measurable impact

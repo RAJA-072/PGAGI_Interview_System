@@ -12,9 +12,10 @@ MAX_QUESTIONS = int(os.getenv("MAX_QUESTIONS", "5"))
 TOP_K = int(os.getenv("TOP_K", "3"))
 
 # Roles supported out of the box. Each must have a matching folder under BOOKS_DIR.
-SUPPORTED_ROLES = ["ai_ml", "data_science"]
+SUPPORTED_ROLES = ["ai_ml", "data_science", "software_engineering"]
 
 ROLE_DISPLAY_NAMES = {
     "ai_ml": "AI/ML Engineer",
-    "data_science": "Data Science / Applied ML Engineer",
+    "data_science": "Data Science Engineer",
+    "software_engineering": "Software Engineer",
 }
